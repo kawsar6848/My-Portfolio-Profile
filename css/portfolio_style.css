@@ -1,0 +1,669 @@
+@import 'http://fonts.googleleapis.com/css?family=Alegreya+Sans';
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body,html{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	/*font-family: "Lato" , sans-serif;*/
+	font-weight: 400;
+	line-height: 1.8em;
+	/*color: #333;*/
+	/*background: #f5f5f5;
+	color: #67727A;*/
+	font-family: 'Alegreya', sans-serif;
+}
+header{
+	background-color: #071730;
+	width: 100%;
+	height: 86px;
+}
+#header-inner{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+#logo{
+	margin: 20px;
+	float: left;
+	width: 200px;
+	height: 60px;
+	background: url(../images/RD.png)no-repeat center;
+}
+/*----- start navigation -- */
+nav{
+	float: right;
+	padding: 25px 20px 0 0; 
+}
+#menu-icon{
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(../images/nav.png) center;
+}
+a:hover#menu-icon{
+	border-radius: 4px 4px 0 0;
+}
+ul{
+	list-style-type: none;
+}
+nav ul li{
+	font-family: 'Alegreya', sans-serif;
+	font-size: 120%;
+	display: inline-block;
+	float: left;
+	padding: 10px;  
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: #c3D7DF;
+}
+.current{
+	color: #c3D7DF;
+	
+}
+/*--mouse creating -- */
+@-webkit-keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+@-moz-keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+@keyframes scroll-ani {
+  0% {
+    opacity: 1;
+    top: 29%;
+  }
+  15% {
+    opacity: 1;
+    top: 50%;
+  }
+  50% {
+    opacity: 0;
+    top: 50%;
+  }
+  100% {
+    opacity: 0;
+    top: 29%;
+  }
+}
+.mouse-scroll {
+	position: absolute;
+	left:48%;
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7F8C8D;
+	color: #FFF;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+	margin-top: 15%;
+	text-decoration: none;
+	overflow: hidden;
+
+}
+.mouse-scroll .mouse {
+  position: relative;
+  display: block;
+ /* width: 46px;
+  height: 73px;*/
+   width: 40px;
+  height: 55px;
+  margin: 0 auto 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 3px solid #FFF;
+  border-radius: 23px;
+
+}
+.mouse-scroll .mouse .mouse-movement {
+  position: absolute;
+  display: block;
+  top: 29%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  margin: -4px 0 0 -4px;
+  background: #FFF;
+  border-radius: 50%;
+  -webkit-animation: scroll-ani 4s linear infinite;
+  -moz-animation: scroll-ani 4s linear infinite;
+  animation: scroll-ani 4s linear infinite;
+}
+.mouse-scroll .mouse-message {
+  float: left;
+  color: #fff;
+  margin: -200px 0 0 7px;
+  padding: 0;
+  -webkit-animation: scroll-ani 4s linear infinite;
+  -moz-animation: scroll-ani 4s linear infinite;
+  animation: scroll-ani 4s linear infinite;
+}
+.mouse-scroll:hover .mouse-message {
+  margin-top: 0;
+}
+
+/* --- end of navigation --*/
+.pimg1, .pimg2, .pimg3, .pimg4
+{
+ position: relative;
+ /*opacity: 0.90;*/
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+
+ background-attachment: fixed;
+}
+
+.pimg1{
+	background-image: linear-gradient(0deg, #000 5%, transparent),
+	url(../images/clouds.jpg);
+	min-height: 700px;
+}
+.pimg2{
+	background-image:linear-gradient(0deg, #000 5%, transparent),
+	url(../images/programmer.jpg);
+	min-height: 400px;
+}
+.pimg3{
+	background-image: linear-gradient(0deg, #000 5%, transparent),
+	url(../images/writecode.jpg);
+	min-height: 400px;
+}
+.pimg4{
+	background-image: linear-gradient(0deg, #000 5%, transparent),
+	url(../images/work.jpg);
+	min-height: 400px;
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+/*
+.section-light{
+	background-color: #f4f4f4;
+	color: #666;
+}*/
+.my-pics img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 2px solid #dedede;
+	background: #fff;
+	background-position: center;
+	padding: 7px;
+	box-shadow: 0 7px 10px #999;
+	transition: 0.3s;
+}
+#my_name{
+	color: #333;
+	font-size: 2.3rem;
+	text-transform: uppercase;
+    margin: 0 auto;
+    letter-spacing: 1.2px;
+}
+.my-pics .middle{
+		vertical-align: middle;
+}
+.persolnal-wrapper{
+	display: flex;
+	flex-direction: column;
+}
+.persolnal-wrapper strong {
+	display: block;
+	color: #333;
+	margin-bottom: 5px;
+	
+}
+.persolnal-wrapper span {
+	text-transform: uppercase;
+	color: #555;
+	margin: 5px 0 10px;
+	
+}
+#personal_info{
+	font-size: 1.3rem;
+    margin-top: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #333;
+    font-weight: bolder;
+}
+.introduce{
+	text-transform: uppercase;
+}
+.introduce p{
+	color: #555;
+	font-weight: 300;
+	margin: 0 auto;
+}
+p.intro{
+	margin-top: 20px;
+}
+.collapsible {
+    background-color: #f1f1f1;
+    color: #555;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.coll{
+	margin-top: 40px;
+}
+.coll i{
+	float: right;
+}
+
+/*.active, .collapsible:hover {
+    background-color: #fff;
+}*/
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #fff;
+}
+.heading-line{
+	height: 3px;
+    width: 100px;
+    background: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+.section-dark{
+	background-color: #555;
+	color: #ddd;
+}
+/* --------------------------Services  styling start here------------------ */
+@import 'http://fonts.googleleapis.com/css?family=Alegreya+Sans';
+.services{
+    padding: 80px 0 80px;
+    text-align: center;
+    background-color: #f4f7f9;
+
+}
+.services .container .heading-line{
+	height: 3px;
+    width: 100px;
+    background: #333;
+    left: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+
+}
+.services h2,
+.services h4 {
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+    font-family: 'Alegreya', sans-serif;
+
+}
+.services p{
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #737373;
+    font-size: 14px;
+    padding-bottom: 40px;
+    
+}
+.services i{
+    height: 80px;
+    width: 80px;
+    font-size: 30px;
+    padding: 25px 20px;
+    border-radius: 50%;
+    background-color: #222;
+    color: #fff;
+}
+
+
+
+
+@media (max-width: 768px;) {
+    .services {
+        padding: 30px;
+    }
+
+}
+/*--------------------------------- end services  styling here---------------*/
+
+.words{
+	font-family: 'Alegreya', sans-serif; 
+	font-size: 2.2rem;
+	line-height: 1.2;
+	padding: 50px 80px;
+}
+.ptext{
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	font-family: 'Alegreya', sans-serif;
+	text-align: center;
+	color: #fff;
+	/*font-size: 27px;*/
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.ptext .info{
+	font-family: 'Alegreya', sans-serif;
+	font-weight: 300;
+	font-size: 1.3rem;
+}
+#name
+{
+	font-size: 4rem;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	display: inline-block;
+
+}
+/* progress bar start */
+.container .heading-line{
+	background: #fff;
+	left: 45%;
+}
+.container p.title{
+	color: #fff;
+    position: relative;
+    padding: 10px 15px;
+}
+.container p{
+	margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: 'Alegreya', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+}
+#technical{
+	margin-top: 40px;
+	display: block;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.progress_name{
+	position: relative;
+	color: #fff;
+	font-weight: bold;
+	font-size: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.progress-bar1 {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin:0 auto;
+  padding: 80px 50px;
+}
+ 
+.progress-bar1 div {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+ 
+.progress-bar1 div span {
+  position: absolute;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 75px;
+  height: 75px;
+  width: 75px;
+  left: 12.5px;
+  top: 12.5px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: white;
+}
+ 
+.progress-bar1 .background { background-color: #b3cef6; }
+ 
+.progress-bar1 .rotate {
+  clip: rect(0 50px 100px 0);
+  background-color: #4b86db;
+}
+ 
+.progress-bar1 .left {
+  clip: rect(0 50px 100px 0);
+  opacity: 1;
+  background-color: #b3cef6;
+}
+ 
+.progress-bar1 .right {
+  clip: rect(0 50px 100px 0);
+  transform: rotate(180deg);
+  opacity: 0;
+  background-color: #4b86db;
+}
+ 
+@keyframes
+toggle {  0% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+/* carousel start */
+/* Carousel */
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    /* Control buttons  */
+    /* Previous button  */
+    /* Next button  */
+    /* Changes the position of the indicators */
+    /* Changes the color of the indicators */
+}
+#quote-carousel .carousel-control {
+    background: none;
+    color: #CACACA;
+    font-size: 2.3em;
+    text-shadow: none;
+    /*margin-top: 30px;*/
+}
+/*#quote-carousel .carousel-control.left {
+    left: -60px;
+}
+#quote-carousel .carousel-control.right {
+    right: -60px;
+}
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+#quote-carousel .carousel-indicators li {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border: 4px solid #CCC;
+    border-radius: 50px;
+    opacity: 0.4;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+    width: 128px;
+    height: 128px;
+    border-radius: 100px;
+    border-color: #f33;
+    opacity: 1;
+    overflow: hidden;
+}*/
+.carousel-inner {
+    min-height: 320px;
+}
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+.ptext .container .words_testimonial{
+    font-size: 16px;
+    font-style: italic;
+    text-transform: lowercase;
+}
+/*.item small {
+    margin-bottom: 50px;
+}*/
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+/*---testimonial end --- */
+/* Contact  styling start  here */
+.contact{
+    padding: 50px 0 80px;
+    text-align: center;
+}
+.contact p{
+    padding-bottom: 80px;
+    color: #737373;
+}
+.contact h2{
+    color: #4c4c4c;
+    margin: 20px 0 20px;
+}
+.contact .input-group{
+    margin-bottom: 25px;
+}
+.contact .form-control{
+    border: 0 !important;
+}
+.contact span{
+    border-radius: 0 !important;
+}
+.contact .btn {
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #f08080;
+    color: #fff;
+}
+.contact .btn:hover {
+    background-color: #a85959 !important;
+    color: #fff !important;
+}
+/* --------------------------Contact styling end here ---------------------*/
+
+/* --------------------------footer style  start here ---------------------*/
+.footer{
+	background: #31353a;
+}
+.footer h2{
+	text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+.footer .container .heading-line {
+	position: relative;
+	display: block;
+    left: 46%;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.footer h6{
+	text-align: center;
+	color: #fff;
+}
+.social:hover {
+     -webkit-transform: scale(1.1);
+     -moz-transform: scale(1.1);
+     -o-transform: scale(1.1);
+ }
+ .social {
+     -webkit-transform: scale(0.8);
+     /* Browser Variations: */
+     
+     -moz-transform: scale(0.8);
+     -o-transform: scale(0.8);
+     -webkit-transition-duration: 0.5s;
+     -moz-transition-duration: 0.5s;
+     -o-transition-duration: 0.5s;
+ }
+
+/*
+    Multicoloured Hover Variations
+*/
+ 
+ #social-fb:hover {
+     color: #3B5998;
+ }
+ #social-tw:hover {
+     color: #4099FF;
+ }
+ #social-gp:hover {
+     color: #d34836;
+ }
+ #social-em:hover {
+     color: #f39c12;
+ }
+/* --------------------------footer style  start here ---------------------*/
+
+@media(max-width: 568px){
+	.pimg1, .pimg2, .pimg3{
+		background-attachment: scroll;
+	}
+}
